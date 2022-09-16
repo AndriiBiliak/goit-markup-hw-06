@@ -578,6 +578,7 @@ footer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  margin-right: 93px;
 }
 
 .title-foote {
@@ -627,19 +628,52 @@ footer {
 
 .form-footer-group {
   display: flex;
+  position: relative;
   align-items: center;
   gap: 12px;
 }
 
 .form-footer-input {
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: var(--backgraund-secondary-color);
   width: 358px;
   height: 50px;
   padding-left: 16px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  border-radius: 4px;
+  background-color: var(--backgraund-secondary-color);
+  color: var(--backgraund-color);
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 200px;
+  min-height: 50px;
+  letter-spacing: 0.06em;
+  gap: 10px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 32px;
+  color: var(--backgraund-color);
+  /*cursor: pointer;*/
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  cursor: pointer;
+}
+
+.footer-btn-icons {
+  position: absolute;
+  right: 34px;
 }
 
 /* портфоліо основа*/
@@ -1000,5 +1034,9 @@ footer {
   border: 0;
   padding: 10px 32px;
   color: var(--backgraund-color);
+}
+
+.register-form-btn:hover,
+.register-form-btn:focus {
   cursor: pointer;
 }
