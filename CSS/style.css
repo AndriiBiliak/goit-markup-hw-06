@@ -1023,6 +1023,12 @@ footer {
   opacity: 0;
 }
 
+.register-form-checkbox:focus + .register-form-icons-checkbox {
+  outline: 2px solid var(--primary-text-color);
+  outline-offset: 1px;
+  border-radius: 2px;
+}
+
 .register-form-desc {
   user-select: none;
 
