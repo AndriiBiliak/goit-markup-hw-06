@@ -632,7 +632,10 @@ footer {
   display: flex;
   position: relative;
   align-items: center;
-  gap: 12px;
+}
+
+.form-footer-field {
+  margin-right: 12px;
 }
 
 .form-footer-input {
@@ -918,6 +921,7 @@ footer {
 .register-form-field {
   position: relative;
   display: block;
+  margin-bottom: 10px;
 }
 
 .register-form-lable {
@@ -946,7 +950,6 @@ footer {
   outline: transparent;
 
   transition: border-color var(--animation);
-  margin-bottom: 10px;
 }
 
 .register-form-input:focus {
@@ -955,7 +958,7 @@ footer {
 
 .register-form-icons {
   position: absolute;
-  bottom: 21px;
+  bottom: 12px;
   left: 10px;
 
   transition: fill var(--animation);
